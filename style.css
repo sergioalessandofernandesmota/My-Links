@@ -1,67 +1,77 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
-    background-color: rgb(43, 48, 43);
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    background: url('images/images/um\ plano\ de\ fundo\ para\ site\ com\ características\ de\ motocicletas\,\ bicicletas\,\ cachorros\,\ tecnologia\,\ carros\,\ viagens\,\ localização\ e\ metais\,\ com\ largura\ e\ altura\ específicas.png') center center no-repeat;
+    background-size: cover;  /* Faz a imagem cobrir toda a área do fundo */
+    color: white;
+    text-align: center;
+    padding: 01px;
 }
 img {
-  
-    border-radius: 200px; 
-    width: 320px;
-    height: 320px;
-    border: 3px solid rgb(108, 112, 102)
+    border-radius: 100px;
+    width: 300px;  /* Reduz o tamanho da largura da foto */
+    height: 300px;  /* Reduz o tamanho da altura da foto */
+    border: 3px solid rgb(108, 112, 102);
+    margin-top: 50px;  /* Aumenta a distância da imagem da margem superior */
 }
-
-h1{
-    color: rgb(129, 142, 105);
+h1 {
+    color: rgba(19, 18, 2, 0.711);
     margin-top: 31px;
-    margin-bottom:  8px; ;
- }
-
- p {
-    color: rgba(220, 135, 24, 0.88);
- }
-
-ul{
-    margin-top: 35px;
+    margin-bottom: 8px;
 }
-
+p {
+    color: rgba(25, 20, 4, 0.88);
+    margin: 10px 0;
+}
+ul {
+    margin-top: 35px;
+    padding-left: 0;
+}
 li {
     list-style: none;
-    margin-bottom: 18px
+    margin-bottom: 18px;
+    width: 300px;  /* Largura aumentada dos itens */
+    height: 60px;  /* Altura aumentada dos itens */
 }
-
 a {
-
-    background-color: rgba(218, 83, 4, 0.352);
-        color: rgb(181, 127, 65);
-    padding: 15px;
+    background-color: rgb(42, 42, 43);  /* Cor de fundo azul */
+    color: white;  /* Cor do texto branco */
+    padding: 15px 25px;
     text-decoration: none;
     display: block;
     border-radius: 5px;
-
+    transition: all 0.5s ease-in-out;  /* Transição suave */
+    animation: blink 2.0s infinite;  /* Animação de piscar */
+}
+a:hover {
+    background-color: rgb(255, 193, 7);  /* Cor de fundo dourada ao passar o mouse */
+    color: white;  /* Cor do texto branco */
+}
+footer {
+    color: rgba(0, 0, 0, 0.901);
+}
+.container {
+    max-width: 500px;  /* Reduzido ainda mais */
+    margin: 50px auto;  /* Alinha o contêiner à esquerda */
+    padding: 100px;
+    background-color: rgba(148, 141, 141, 0.8);  /* Fundo branco translúcido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;  /* Alinha o texto à esquerda */
 }
 
-a:hover { 
-    background-color: aliceblue;
-    color: lawngreen;
-
+/* Animação de piscar */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        opacity: 0.5;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
 }
-
-footer{
-        color: rgb(181, 88, 17);
-}
-
-.container{
-
-    width: 320px;
-    text-align: center;
-    margin-top: 51px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
